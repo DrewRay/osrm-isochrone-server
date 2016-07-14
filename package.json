@@ -4,13 +4,13 @@
   "description": "osrm-isochrone API web server",
   "main": "server.js",
   "dependencies": {
-    "minimist": "^1.1.2",
-    "osrm": ">=4.9.0 <5.0.0",
-    "osrm-isochrone": ">=2.0.0",
-    "polyline": "^0.1.0",
+    "config": "^1.16.0",
     "hull.js": "^0.2.7",
-    "turf-buffer": "^1.0.4",
-    "config": "^1.16.0"
+    "minimist": "^1.1.2",
+    "osrm": "^5.2.6",
+    "osrm-isochrone": "git+https://github.com/DrewRay/osrm-isochrone.git",
+    "polyline": "^0.1.0",
+    "turf-buffer": "^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
