@@ -61,10 +61,11 @@ var server = http.createServer(function(req, res) {
     }
 
     var maxspeed = config.get('maxspeed');
+    var unit = config.get('unit');
     var iso = new isochrone(location, time, {
       resolution: resolution,
       maxspeed: maxspeed,
-      unit: 'kilometers',
+      unit: unit,
       network: osrm
     }, function(err, drivetime) {
       if (err) {
